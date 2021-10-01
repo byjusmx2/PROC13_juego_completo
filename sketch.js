@@ -47,7 +47,7 @@ function setup() {
 
 function draw() {
   background(180);
-  text("Score: "+ score, 500,50);
+  text("Puntuación: "+ score, 500,50);
   score = score + Math.round(frameCount/60);
   
   
@@ -78,7 +78,7 @@ function spawnObstacles(){
    obstacle.velocityX = -6;
 
    
-    // //generar obstáculos aleatorios
+    //generar obstáculos aleatorios
     var rand = Math.round(random(1,6));
     switch(rand) {
       case 1: obstacle.addImage(obstacle1);
